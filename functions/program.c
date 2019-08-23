@@ -16,10 +16,9 @@ int main()
 /* power: powers base to n step; n >= 0 */
 int power(int base, int n)
 {
-	int i, p;
+	int p;
 
-	p = 1;
-	for (i = 1; i <= n; i++)
+	for (p = 1; p <= n; p++)
 		p = p* base;
 
 	return p;
