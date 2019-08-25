@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 int main()
 {
 	float	fahrengate, celsius;
@@ -15,4 +16,5 @@ int main()
 		printf("%15.1f\t%15.1f\n", fahrengate, celsius);
 		fahrengate = fahrengate + step;
 	}
+	return 0;
 }
