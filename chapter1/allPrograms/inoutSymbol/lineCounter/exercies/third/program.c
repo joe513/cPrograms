@@ -5,25 +5,25 @@
 
 int main()
 {
-	int	c, nl, nw, nc, state;
+	int	character, newWordCounter, newLineCounter, newCharacterCounter, state;
 
 	state = OUT;
-	nl = nw = nc = 0;
+	newWordCounter = 0; newCharacterCounter = 0;
+	newLineCounter = 0;
 
-	while ((c = getchar()) != EOF)
-		++nc;
+	while ((character = getchar()) != EOF)
+		++newCharacterCounter;
 
-		if (c == '\n')
-			++nl;
+		if (character == '\n')
+			newLineCounter = newLineCounter + 1;
 
-		if (c == ' ' || c == '\n'   \
-		|| c == '\t')
+		if (character == ' ' || character == '\n'   \
+		|| character == '\t')
 			state = OUT;
 
 		else if (state = OUT)	{
 			state = IN;
-			++nw;
+			++newWordCounter;
 	}
-	printf("Line Number: %d \tWord Number: %d charNubmer: %d\n", \
-		nl, nw, nc);
+	printf("Line Number: %d \tWord Number: %d Character nubmer: %d\n", newLineCounter, newWordCounter, newCharacterCounter);
 }
