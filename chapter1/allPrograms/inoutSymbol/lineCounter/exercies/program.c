@@ -17,6 +17,4 @@ int main()
 	}
 
 	printf("Spaces: %d \t Tabs: %d \t New lines: %d\n", space, tab, newLine);
-
 }
-

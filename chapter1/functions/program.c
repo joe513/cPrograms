@@ -23,4 +23,3 @@ int power(int base, int n)
 
 	return p;
 }
-
